@@ -45,10 +45,10 @@ function onDeviceReady() {
     }
 
     var permissions = cordova.plugins.permissions;
-    permissions.requestPermission(permissions.CAMERA, success, error);
+    permissions.requestPermission(permissions.ACCESS_FINE_LOCATION, success, error);
 
 function error() {
-  console.warn('Camera permission is not turned on');
+  console.warn('Gps permission is not turned on');
 }
 
 function success( status ) {
